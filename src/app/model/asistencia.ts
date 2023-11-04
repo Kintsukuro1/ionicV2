@@ -48,6 +48,13 @@ export class Asistencia {
         this.sede = sede;
       }
 
+      obtenerAsistenciaDesdeQR(datosQR: string) {
+        if(this.verificarAsistenciaDesdeQR(datosQR)) {
+          return JSON.parse(datosQR) as Asistencia;
+        }
+        return new Asistencia();
+      }
+
       verificarAsistenciaDesdeQR(datosQR: string) {
         if (datosQR !== '' ) {
           try {
