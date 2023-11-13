@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
+
 @Component({
   selector: 'app-correcto',
   templateUrl: './correcto.page.html',
@@ -16,5 +17,7 @@ export class CorrectoPage implements OnInit {
 
   ngOnInit() {
   }
+
+  
 
 }

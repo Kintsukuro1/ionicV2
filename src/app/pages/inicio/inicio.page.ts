@@ -34,7 +34,7 @@ export class InicioPage implements OnInit {
   });
 }
 
-cambiarComponente(nombreComponente: string) {
+cambiarComponente(nombreComponente: string) { 
   this.componente_actual = nombreComponente;
   if(this.componente_actual === 'foro') this.api.cargarPublicaciones();
   if(this.componente_actual === 'misdatos') this.authService.leerUsuarioAutenticado();
