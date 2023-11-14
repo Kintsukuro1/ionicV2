@@ -77,5 +77,4 @@ export class DataBaseService {
       [correo, password])).values as Usuario[];
     return usuarios[0];
   }
-
 }
